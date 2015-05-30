@@ -11,9 +11,9 @@ public class WordList {
 		words = fill(fileName);
 	}
 	
-	public List<String> fill(String s) throws IOException {
+	private List<String> fill() throws IOException {
 		List<String> l = new ArrayList<String>();
-		Scanner scan = new Scanner(new File(s));
+		Scanner scan = new Scanner(new File(getFileName()));
 		while (scan.hasNext())
 			l.add(scan.next());
 		return l;
@@ -21,6 +21,10 @@ public class WordList {
 	
 	public List<String> getWords() {
 		return words;
+	}
+
+	public String getFileName() {
+		return fileName;
 	}
 
 }
