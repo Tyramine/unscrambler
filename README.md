@@ -1,0 +1,1 @@
+Unscrambler takes an input word and unscrambles it based on a word list of dictionary words. 
